@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Emergência | Tiago - Desenvolvedor</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <meta name="description" content="Aplicação desktop para gerenciamento de itens essenciais para situações de emergência, com controle de estoque, alertas de validade e análise de preparação.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Tiago<span>.</span></a>
+                <a href="../../index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar ao Portfólio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-text">
+                    <h1 class="project-title">
+                        Gestor de <span class="text-gradient">Kit de Emergência</span>
+                    </h1>
+                    <p class="project-subtitle">
+                        Aplicação desktop para Windows que oferece uma solução completa para gerenciamento 
+                        de kits de emergência. Controle de inventário, notificações de validade e 
+                        planejador inteligente para garantir sua preparação.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">Gestão</div>
+                            <div class="stat-label">Completa</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Tecnologias</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">Alertas</div>
+                            <div class="stat-label">Automáticos</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn">
+                            <i class="fas fa-camera"></i>
+                            Ver Telas
+                        </a>
+                        <a href="https://github.com/tiagoDev/kit-emergencia" class="btn btn-github" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Código Fonte
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="main-showcase" onclick="openModal(0)">
+                        <img src="assets/imagens/Captura de tela 2025-09-17 202446.png" alt="Visão geral do sistema Kit de Emergência">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Capturas de <span class="text-gradient">Tela</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="assets/imagens/Captura de tela 2025-09-17 202531.png" alt="Tela de Adicionar Itens">
+                    <div class="gallery-overlay">
+                        <h3>Gestão de Itens</h3>
+                        <p>Interface intuitiva para adicionar e gerenciar produtos</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="assets/imagens/Captura de tela 2025-09-17 202711.png" alt="Análise de Preparação">
+                    <div class="gallery-overlay">
+                        <h3>Análise de Preparação</h3>
+                        <p>Avalia o nível de preparação para diferentes cenários</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="assets/imagens/Captura de tela 2025-09-17 202841.png" alt="Dashboard Principal">
+                    <div class="gallery-overlay">
+                        <h3>Dashboard Principal</h3>
+                        <p>Visão completa de todos os itens e seus status</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Principais <span class="text-gradient">Funcionalidades</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-boxes"></i></div>
+                    <h3>Inventário Detalhado</h3>
+                    <p>Controle completo dos itens, incluindo quantidade, validade, localização, prioridade e custo, tudo em um só lugar.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                    <h3>Alertas de Validade</h3>
+                    <p>Receba notificações automáticas na área de trabalho sobre itens que estão próximos de vencer, garantindo que seu kit esteja sempre pronto.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Planejador Inteligente</h3>
+                    <p>Gere listas de compras com base no número de pessoas na família, calculando as quantidades ideais de itens essenciais.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Análise de Preparação</h3>
+                    <p>Painel que avalia o quão preparado seu kit está para diferentes cenários de emergência, como apagões ou desastres naturais.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-import"></i></div>
+                    <h3>Importar e Exportar</h3>
+                    <p>Exporte seu inventário para um arquivo CSV para backup ou análise externa, e importe listas de itens para agilizar o cadastro.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Interface Customizável</h3>
+                    <p>Personalize a aparência da aplicação com temas claro e escuro, e ajuste o tamanho da fonte para melhor legibilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologias <span class="text-gradient">Utilizadas</span></h2>
+            <div class="tech-content">
+                <div>
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Stack de Desenvolvimento</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <i class="fab fa-python" style="color: #3776ab;"></i>
+                            <br><span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-desktop" style="color: #6366f1;"></i>
+                            <br><span>CustomTkinter</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database" style="color: #003b57;"></i>
+                            <br><span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Informações do Projeto</h3>
+                    <div class="info-item">
+                        <span class="info-label">Status</span>
+                        <span class="info-value" style="color: var(--warning);"> Versão Demo</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Duração</span>
+                        <span class="info-value">1 Mês</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Tipo</span>
+                        <span class="info-value">Aplicação Desktop</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Plataforma</span>
+                        <span class="info-value">Windows</span>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/tiagoDev/kit-emergencia" class="btn btn-github" style="width: 100%; justify-content: center;" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Ver Repositório Completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="text-gradient">Tiago</h3>
+            <p>Desenvolvendo soluções que fazem a diferença.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <button class="modal-nav modal-prev" onclick="previousImage()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-nav modal-next" onclick="nextImage()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-counter">
+            <span id="modalCounter">1 / 21</span>
+        </div>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Captura de tela do projeto">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

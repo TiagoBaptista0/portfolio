@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Funerário | Tiago - Desenvolvedor</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <meta name="description" content="Sistema de página única para a geração de relatórios funerários com validação de dados e layout para impressão.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Tiago<span>.</span></a>
+                <a href="../../index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar ao Portfólio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="project-title">
+                        Sistema de <span class="text-gradient">Relatório Funerário</span>
+                    </h1>
+                    <p class="project-subtitle">
+                        Uma aplicação de página única (SPA) desenvolvida para otimizar a coleta de dados e a geração de relatórios detalhados para serviços funerários, com foco na precisão e formalidade.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat"><div class="stat-number">Offline</div><div class="stat-label">Funcional</div></div>
+                        <div class="stat"><div class="stat-number">Print-Ready</div><div class="stat-label">Relatórios</div></div>
+                        <div class="stat"><div class="stat-number">Validação</div><div class="stat-label">em Tempo Real</div></div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="funeral-form-complete.html" class="btn" target="_blank"><i class="fas fa-play"></i>Abrir Sistema</a>
+                        <a href="#gallery" class="btn btn-github"><i class="fas fa-camera"></i>Ver Telas</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="main-showcase" onclick="openModal(0)">
+                        <img src="assets/imagens/funeral-tela-1.png" alt="Visão geral do formulário funerário">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeria do <span class="text-gradient">Sistema</span></h2>
+            <div class="gallery-grid" id="gallery-grid-container">
+                </div>
+        </div>
+    </section>
+    
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Principais <span class="text-gradient">Funcionalidades</span></h2>
+            <div class="features-grid">
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-check-double"></i></div><h3>Validação de Campos</h3><p>Todos os campos obrigatórios são validados para garantir que nenhuma informação essencial seja esquecida antes da geração do relatório.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-keyboard"></i></div><h3>Formatação Automática</h3><p>Campos como CPF e Telefone são formatados em tempo real enquanto o usuário digita, garantindo o padrão correto e evitando erros.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-print"></i></div><h3>Geração para Impressão</h3><p>Com um clique, o sistema oculta o formulário e gera um relatório formatado em A4, pronto para ser impresso ou salvo como PDF.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-file-invoice"></i></div><h3>Estrutura Formal</h3><p>O layout do formulário e do relatório foi projetado com uma estética sóbria e profissional, utilizando a fonte 'Times New Roman' para formalidade.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-calendar-times"></i></div><h3>Controle de Datas</h3><p>O campo de data do falecimento possui um validador que não permite a seleção de datas futuras, assegurando a precisão dos registros.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-file-export"></i></div><h3>Página Única (SPA)</h3><p>Toda a funcionalidade ocorre em uma única página, sem recarregamentos, oferecendo uma experiência de uso rápida e fluida.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologias <span class="text-gradient">Utilizadas</span></h2>
+            <div class="tech-content">
+                <div>
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Stack de Desenvolvimento</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fab fa-html5" style="color:#e34f26;"></i><br><span>HTML5</span></div>
+                        <div class="tech-item"><i class="fab fa-css3-alt" style="color:#1572b6;"></i><br><span>CSS3</span></div>
+                        <div class="tech-item"><i class="fab fa-js" style="color:#f7df1e;"></i><br><span>JavaScript</span></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Informações do Projeto</h3>
+                    <div class="info-item"><span class="info-label">Status</span><span class="info-value" style="color: var(--success);">✓ Concluído</span></div>
+                    <div class="info-item"><span class="info-label">Tipo</span><span class="info-value">Página Única (SPA)</span></div>
+                    <div class="info-item"><span class="info-label">Foco</span><span class="info-value">Geração de Documentos</span></div>
+                    <div style="margin-top: 2rem;"><a href="https://github.com/TiagoBaptista0/Sistema-de-Relatorio-funerario" class="btn btn-github" style="width: 100%; justify-content: center;" target="_blank"><i class="fab fa-github"></i>Ver Repositório</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><h3 class="text-gradient">Tiago</h3><p>Desenvolvendo soluções que fazem a diferença.</p></div></footer>
+
+    <div id="imageModal" class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <button class="modal-nav modal-prev" onclick="previousImage()"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-nav modal-next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+        <div class="modal-counter"><span id="modalCounter"></span></div>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Captura de tela do projeto">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
